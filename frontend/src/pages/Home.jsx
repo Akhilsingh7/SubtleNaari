@@ -3,47 +3,12 @@ import home from "../assets/images/home.jpg";
 import newArrival from "../assets/images/NewArrival.jpg";
 
 import NewArrival from "@/components/NewArrival";
+import BrowseAllProducts from "@/components/BrowseAllProducts";
+import Collectionhome from "@/components/Collectionhome";
 
 function Home() {
-  const items = [
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [home],
-    },
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [newArrival],
-    },
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [newArrival],
-    },
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [newArrival],
-    },
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [newArrival],
-    },
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [newArrival],
-    },
-    {
-      name: "Peach floral Saree ",
-      price: "3000",
-      images: [newArrival],
-    },
-  ];
   return (
-    <div className=" pb-2">
+    <div className=" pb-2  assistant  ">
       <div className=" overflow-hidden relative h-[50%] ">
         <img
           className=" object-cover  w-full h-[70vh]"
@@ -65,10 +30,12 @@ function Home() {
         </div>
       </div>
 
-      <p className=" text-center text-4xl pt-10 pb-5  font-serif">
+      <p className=" text-center text-4xl pt-10 pb-5 assistant ">
         NEW ARRIVALS
       </p>
-      <NewArrival items={items} />
+      <NewArrival />
+      <BrowseAllProducts />
+      <Collectionhome />
     </div>
   );
 }
