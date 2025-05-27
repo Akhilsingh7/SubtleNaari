@@ -7,6 +7,7 @@ import { PiPlus } from "react-icons/pi";
 function SingleProduct() {
   const { productName } = useParams();
   const { products } = useAllProducts();
+  const [quantity, setQuantity] = React.useState(1);
 
   const product = products.filter(
     (product) => product.name.trim() === productName.trim()
